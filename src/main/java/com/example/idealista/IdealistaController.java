@@ -52,7 +52,7 @@ public class IdealistaController {
                 .collect(toList());
     }
 
-    @RequestMapping("/calidad")
+    @RequestMapping("/noRelevantes")
     public List<Map<String, Object>> casasParaCalidad() {
         return anuncioRepo.findAll()
                 .stream()
